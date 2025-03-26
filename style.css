@@ -1,0 +1,71 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-bottom: 80px; /* Para não cobrir o conteúdo com o rodapé fixo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+}
+
+/* Título dos produtos */
+h2 {
+    margin-bottom: 30px; /* Mais espaço abaixo do título */
+}
+
+/* Container de produtos */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilização dos produtos */
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 250px;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+/* Preço destacado */
+.preco {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Rodapé fixo */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

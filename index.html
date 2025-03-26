@@ -4,43 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Sapatos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            max-width: 600px;
-        }
-        article {
-            margin-bottom: 15px;
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
-        }
-        article:last-child {
-            border-bottom: none;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -48,24 +12,28 @@
         <p>Os melhores calçados pelo melhor preço!</p>
     </header>
     
-    <section>
-        <h2>Nossos Produtos</h2>
-        <article>
-            <h3>Sapato Social</h3>
-            <p>Elegante e confortável. Ideal para eventos formais.</p>
-            <p>Preço: R$ 199,90</p>
-        </article>
-        <article>
-            <h3>Tênis Esportivo</h3>
-            <p>Leve e resistente. Perfeito para atividades físicas.</p>
-            <p>Preço: R$ 149,90</p>
-        </article>
-        <article>
-            <h3>Sapatênis Casual</h3>
-            <p>Moderno e estiloso. Combina com qualquer ocasião.</p>
-            <p>Preço: R$ 179,90</p>
-        </article>
-    </section>
+    <main>
+        <section class="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="container">
+                <article class="produto">
+                    <h3>Sapato Social</h3>
+                    <p>Elegante e confortável. Ideal para eventos formais.</p>
+                    <p class="preco">R$ 199,90</p>
+                </article>
+                <article class="produto">
+                    <h3>Tênis Esportivo</h3>
+                    <p>Leve e resistente. Perfeito para atividades físicas.</p>
+                    <p class="preco">R$ 149,90</p>
+                </article>
+                <article class="produto">
+                    <h3>Sapatênis Casual</h3>
+                    <p>Moderno e estiloso. Combina com qualquer ocasião.</p>
+                    <p class="preco">R$ 179,90</p>
+                </article>
+            </div>
+        </section>
+    </main>
     
     <footer>
         <p>Contato: contato@lojadesapatos.com | Telefone: (11) 99999-9999</p>
