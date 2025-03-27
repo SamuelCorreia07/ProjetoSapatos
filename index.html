@@ -8,36 +8,46 @@
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Loja de Sapatos</h1>
+        <h1>Loja de Sapatos</h1>
         <p>Os melhores calçados pelo melhor preço!</p>
     </header>
     
     <main>
-        <section class="produtos">
-            <h2>Nossos Produtos</h2>
-            <div class="container">
-                <article class="produto">
-                    <h3>Sapato Social</h3>
-                    <p>Elegante e confortável. Ideal para eventos formais.</p>
-                    <p class="preco">R$ 199,90</p>
-                </article>
-                <article class="produto">
-                    <h3>Tênis Esportivo</h3>
-                    <p>Leve e resistente. Perfeito para atividades físicas.</p>
-                    <p class="preco">R$ 149,90</p>
-                </article>
-                <article class="produto">
-                    <h3>Sapatênis Casual</h3>
-                    <p>Moderno e estiloso. Combina com qualquer ocasião.</p>
-                    <p class="preco">R$ 179,90</p>
-                </article>
-            </div>
-        </section>
+        <h2>Nossos Produtos</h2>
+        <div class="container">
+            <article>
+                <img src="imagens/sapato_social.jpg" alt="Sapato Social" class="produto-imagem">
+                <h3>Sapato Social</h3>
+                <p>Elegante e confortável. Ideal para eventos formais.</p>
+                <p class="preco">R$ 199,90</p>
+                <button class="comprar-btn" onclick="adicionarAoCarrinho()">Comprar</button>
+            </article>
+            <article>
+                <img src="imagens/tenis_esportivo.jpg" alt="Tênis Esportivo" class="produto-imagem">
+                <h3>Tênis Esportivo</h3>
+                <p>Leve e resistente. Perfeito para atividades físicas.</p>
+                <p class="preco">R$ 149,90</p>
+                <button class="comprar-btn" onclick="adicionarAoCarrinho()">Comprar</button>
+            </article>
+            <article>
+                <img src="imagens/sapatenis_casual.jpg" alt="Sapatênis Casual" class="produto-imagem">
+                <h3>Sapatênis Casual</h3>
+                <p>Moderno e estiloso. Combina com qualquer ocasião.</p>
+                <p class="preco">R$ 179,90</p>
+                <button class="comprar-btn" onclick="adicionarAoCarrinho()">Comprar</button>
+            </article>
+        </div>
     </main>
     
     <footer>
         <p>Contato: contato@lojadesapatos.com | Telefone: (11) 99999-9999</p>
         <p>&copy; 2025 Loja de Sapatos. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function adicionarAoCarrinho() {
+            alert("Produto adicionado ao carrinho!");
+        }
+    </script>
 </body>
 </html>

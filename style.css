@@ -1,3 +1,6 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Reset básico */
 * {
     margin: 0;
@@ -10,25 +13,30 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #f4f4f4;
     text-align: center;
-    padding-bottom: 80px; /* Para não cobrir o conteúdo com o rodapé fixo */
+    padding-bottom: 20px;
 }
 
-/* Cabeçalho */
+/* Cabeçalho fixo */
 header {
     background-color: #333;
     color: white;
-    padding: 15px;
-    font-size: 1.5rem;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-/* Seção principal */
+/* Para evitar sobreposição do cabeçalho no conteúdo */
 main {
-    padding: 20px;
+    padding: 80px 20px 20px;
 }
 
 /* Título dos produtos */
 h2 {
-    margin-bottom: 30px; /* Mais espaço abaixo do título */
+    margin-bottom: 30px;
 }
 
 /* Container de produtos */
@@ -47,25 +55,50 @@ article {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 250px;
+    text-align: center;
 }
 
 article:hover {
     transform: scale(1.05);
 }
 
+/* Estilização da imagem do produto */
+.produto-imagem {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
 /* Preço destacado */
 .preco {
     color: #d9534f;
     font-weight: bold;
+    margin: 10px 0;
 }
 
-/* Rodapé fixo */
+/* Botão de compra */
+.comprar-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.comprar-btn:hover {
+    background-color: #218838;
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }
