@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="cabecalho">
         <h1>Loja de Sapatos</h1>
         <p>Os melhores calçados pelo melhor preço!</p>
     </header>
@@ -48,6 +48,16 @@
         function adicionarAoCarrinho() {
             alert("Produto adicionado ao carrinho!");
         }
+
+        // Detectar rolagem e fixar cabeçalho
+        window.addEventListener("scroll", function() {
+            var cabecalho = document.getElementById("cabecalho");
+            if (window.scrollY > 50) {
+                cabecalho.classList.add("header-fixo");
+            } else {
+                cabecalho.classList.remove("header-fixo");
+            }
+        });
     </script>
 </body>
 </html>

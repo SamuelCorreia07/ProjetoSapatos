@@ -16,17 +16,25 @@ body {
     padding-bottom: 20px;
 }
 
-/* Cabeçalho fixo */
+/* Cabeçalho (estático por padrão) */
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Quando o cabeçalho ficar fixo */
+.header-fixo {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
 
 /* Para evitar sobreposição do cabeçalho no conteúdo */
