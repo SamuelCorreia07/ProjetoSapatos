@@ -16,6 +16,11 @@ body {
     padding-bottom: 20px;
 }
 
+/* Espaço para evitar que o conteúdo "suba" ao fixar o cabeçalho */
+#espaco-header {
+    height: 0;
+}
+
 /* Cabeçalho (estático por padrão) */
 header {
     background-color: #333;
@@ -37,13 +42,9 @@ header {
     padding: 10px;
 }
 
-/* Para evitar sobreposição do cabeçalho no conteúdo */
-main {
-    padding: 80px 20px 20px;
-}
-
 /* Título dos produtos */
 h2 {
+    margin-top: 1em;
     margin-bottom: 30px;
 }
 

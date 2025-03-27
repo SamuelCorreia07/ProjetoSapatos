@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="espaco-header"></div> <!-- Espaço reservado para o cabeçalho -->
+    
     <header id="cabecalho">
         <h1>Loja de Sapatos</h1>
         <p>Os melhores calçados pelo melhor preço!</p>
@@ -49,13 +51,17 @@
             alert("Produto adicionado ao carrinho!");
         }
 
-        // Detectar rolagem e fixar cabeçalho
+        // Detectar rolagem e fixar cabeçalho corretamente
         window.addEventListener("scroll", function() {
             var cabecalho = document.getElementById("cabecalho");
+            var espacoHeader = document.getElementById("espaco-header");
+
             if (window.scrollY > 50) {
                 cabecalho.classList.add("header-fixo");
+                espacoHeader.style.height = cabecalho.offsetHeight + "px"; // Mantém o espaço original
             } else {
                 cabecalho.classList.remove("header-fixo");
+                espacoHeader.style.height = "0"; // Remove o espaço quando o cabeçalho volta ao normal
             }
         });
     </script>
